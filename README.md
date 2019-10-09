@@ -9,7 +9,7 @@ The youtubePartner API is generated from the package.json generate script:
 "generate": "node scripts/generate.js 'https://www.googleapis.com/discovery/v1/apis/youtubePartner/v1/rest'"
 ```
 
-The prepare script has been removed so the /apis directory is not ovewritten upon install in the app. To make youtubePartner API available to the package, youtubePartner was added as an export in /apis/index.js:
+The prepare script has been removed so the /apis directory is not overwritten upon install in the app. To make youtubePartner API available to the package, youtubePartner was added as an export in /apis/index.js:
 
 ```
 'youtubePartner': requireAPI('youtubePartner')
@@ -18,7 +18,7 @@ The prepare script has been removed so the /apis directory is not ovewritten upo
 To install googleapis package in stem-ensemble, run:
 
 ```
-yard add https://github.com/stems/google-api-nodejs-client-legacy/tarball/master
+yarn add googleapis@https://github.com/stems/google-api-nodejs-client-legacy/tarball/master
 ```
 
 To include in a component:
